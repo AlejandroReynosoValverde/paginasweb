@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Zay Shop - Product Listing Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="assets/img/apple-icon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/minilogo.png">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/templatemo.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+
+    <!-- Load fonts style after rendering the layout styles -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+<!--
+    
+TemplateMo 559 Zay Shop
+
+https://templatemo.com/tm-559-zay-shop
+
+-->
+  <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Start Top Nav -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-light d-none d-lg-block" id="templatemo_nav_top">
+        <div class="container text-light">
+            <div class="w-100 d-flex justify-content-between">
+                <div>
+                    <i class="fa fa-envelope mx-2"></i>
+                    <a class="navbar-sm-brand text-light text-decoration-none" href="mailto: ie1263puruchuco@gmail.com"> ie1263puruchuco@gmail.com</a>
+                    <i class="fa fa-phone mx-2"></i>
+                    <a class="navbar-sm-brand text-light text-decoration-none" href="tel: 956280451"> 956280451</a>
+                </div>
+                <div>
+                    <a class="text-light" href="https://www.facebook.com/IE1263puruchuco.ate" target="_blank" rel="sponsored"><i class="fab fa-facebook-f fa-sm fa-fw me-2"></i></a>
+                    <!-- <a class="text-light" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram fa-sm fa-fw me-2"></i></a>
+                    <a class="text-light" href="https://twitter.com/" target="_blank"><i class="fab fa-twitter fa-sm fa-fw me-2"></i></a>
+                    <a class="text-light" href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin fa-sm fa-fw"></i></a> -->
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Close Top Nav -->
+
+
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow">
+        <div class="container d-flex justify-content-between align-items-center">
+
+            <a class="navbar-brand text-success logo h1 align-self-center" href="index.html">
+                <img class="img-fluid" src="./assets/img/logoco.png" alt="">
+            </a>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#templatemo_main_nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" id="templatemo_main_nav">
+                <div class="flex-fill">
+                    <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="galeria.html">Galería</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contactanos.html">Contáctanos</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar align-self-center d-flex">
+                   
+            </div>
+
+        </div>
+    </nav>
+    <!-- Close Header -->
+
+    <!-- Modal -->
+    <div class="modal fade bg-white" id="templatemo_search" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="w-100 pt-1 mb-5 text-right">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form action="" method="get" class="modal-content modal-body border-0 p-0">
+                <div class="input-group mb-2">
+                    <input type="text" class="form-control" id="inputModalSearch" name="q" placeholder="Search ...">
+                    <button type="submit" class="input-group-text bg-success text-light">
+                        <i class="fa fa-fw fa-search text-white"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+ <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-7">
+                    <h1 class="section-title position-relative text-center mb-5">Sobre Nosotros</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 py-5">
+                    <h4 class="font-weight-bold mb-3">Misión</h4>
+                    <h5 class="text-muted mb-3">“Somos una institución educativa que brinda una educación intercultural e inclusiva que tiene como base los valores humanos; con docentes proactivos, empáticos e innovadores, en uso de los recursos tecnológicos que desarrollan procesos pedagógicos en todas las áreas para lograr la mejora de los aprendizajes de nuestros estudiantes”.</h5>
+                    <p></p> 
+
+                    <p></p>
+                     <!-- <a href="" class="btn btn-secondary mt-2">Siempre</a> -->
+                </div>
+                <div class="col-lg-4" style="min-height: 400px;">
+                    <div class="position-relative h-100 rounded overflow-hidden">
+                        <img class="position-absolute w-100 h-100" src="img/f4.jpg" style="object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-lg-4 py-5">
+                    <h4 class="font-weight-bold mb-3">Visión</h4>
+                    <h5 class="text-muted mb-3">“En el 2024, seremos el referente educativo intercultural e inclusiva del distrito de Ate que promueve la defensa del patrimonio cultural, la identidad local, nacional y la mejora de los aprendizajes con la participación de la comunidad educativa para alcanzar los estándares de calidad, desarrollando competencias que formen estudiantes con   Identidad, conciencia ambiental, habilidades tecnológicas, responsabilidad, honestidad y respeto, hacia el logro de la excelencia educativa”.</h5>
+                  
+                   
+                    <!-- <a href="" class="btn btn-primary mt-2">Siempre</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Story Start -->
+    <div class="container-fluid py-5" id="story">
+        <div class="container pt-5 pb-3">
+            <div class="section-title position-relative text-center">
+                <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;"></h6>
+                <h1 class="font-secondary display-4">RESEÑA HISTÓRICA</h1>
+                <i class="far fa-heart text-dark"></i>
+            </div>
+            <div class="container timeline position-relative p-0">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-right">
+                        <img class="img-fluid mr-md-3" src="img/areas-er1.jpg" alt="">
+                    </div>
+                    <div class="col-md-6 text-center text-md-left">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 ml-md-3">
+                            <h4 class="mb-2"></h4>
+                            <p class="text-uppercase mb-2"></p>
+                            <p class="m-0">La historia de nuestra institución educativa está ligada a los inicios de la comunidad. En 1989, un grupo de pobladores, en su mayoría, de origen centro – sur andino de la Sierra ocuparon gran parte de la quebrada de Huaquerones por la necesidad de tener una vivienda propia y fundan el Asentamiento Humano “Túpac Amaru”, el 14 de octubre de ese año.La necesidad de contar con el servicio educativo para los niños, niñas y adolescentes condujo a los dirigentes y pobladores, en enero de 1991, a formar la “Comisión de Educación” con el objetivo de solicitar a las autoridades de la Unidad de Servicios Educativos (USE) Nº14 la apertura e implementación de una escuela.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-right">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 mr-md-3">
+                            <h4 class="mb-2"></h4>
+                            <p class="text-uppercase mb-2"></p>
+                            <p class="m-0">Esto se concreta cuando el 26 de febrero, se presenta un MEMORIAL a dicho órgano descentralizado del Ministerio de Educación (MINEDU). 
+Al mes siguiente, en marzo, la USE exige a la comunidad contar con un terreno para la apertura de la escuela. Al no contar con lo exigido, los pobladores deciden invadir parte del sitio arqueológico de Huaquerones – Puruchuco y, en el breve tiempo de ocho días, logran construir ocho aulas y servicios higiénicos (pozo ciego). Concluida la obra, se remitió el informe para su verificación correspondiente. Es así, que el 01 de abril de 1991, mediante R.D. N°0197 de la USE N°14 se resuelve crear el Centro de Educación Inicial N°192 y la Escuela Estatal de Educación Primaria de Menores N°1263.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-center text-md-left">
+                        <img class="img-fluid ml-md-3" src="img/areas-er1.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-right">
+                        <img class="img-fluid mr-md-3" src="img/areas-er1.jpg" alt="">
+                    </div>
+                    <div class="col-md-6 text-center text-md-left">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 ml-md-3">
+                            <h4 class="mb-2"></h4>
+                            <p class="text-uppercase mb-2"></p>
+                            <p class="m-0">La Dirección de esta última estuvo a cargo del profesor Benigno Romero Rodríguez y la plana docente conformada por Beatriz Baylón, Manuel Camacho, Rodolfo Cunyas, María Hinostroza, Herbert Pacahuala, María Jesús Miranda y el trabajador de servicios Simón Bautista. Un año después, el 09 de noviembre de 1992, con R.D. N°001457, se resuelve ampliar los el nivel de Educación Secundaria de Menores; iniciándose con las docentes Carolina Flores Ascencio, Miriam Casanova, Lidia Samaniego y Silvia Núñez Chiquillán. En el año 1996, la comunidad educativa logra construir diez y seis aulas precarias para el funcionamiento de los niveles de Primaria y Secundaria. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-right">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 mr-md-3">
+                            <h4 class="mb-2"></h4>
+                            <p class="text-uppercase mb-2"></p>
+                            <p class="m-0">Al año siguiente, 1997, se realizó el primer concurso de jardines; logrando crear un área verde de 12 m2 por aula. Seguidamente, en 1998, se alcanzó el primer puesto en el “Concurso de Danzas Folklóricas”, organizado por la Municipalidad de Ate. A partir del año 2000, se logró algunas mejoras en la infraestructura de la escuela, entre ellas: el rellenado del patio con piedra confitada, el arreglo e instalación de dos aulas prefabricadas, la construcción del estrado y la gruta de la virgen María Auxiliadora a cargo del alcalde escolar José Santana.
+ </p>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="col-md-6 text-center text-md-left">
+                        <img class="img-fluid ml-md-3" src="img/areas-er1.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Story End -->
+
+     <div class="container-fluid py-5" id="story">
+        <div class="container pt-5 pb-3">
+            
+                <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;"></h6>
+                <h1 class="font-secondary display-4"></h1>
+          
+            </div>
+            <div class="container timeline position-relative p-0">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-right">
+                        <img class="img-fluid mr-md-3" src="img/areas-er1.jpg" alt="">
+                    </div>
+                    <div class="col-md-6 text-center text-md-left">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 ml-md-3">
+                            <h4 class="mb-2"></h4>
+                            <p class="text-uppercase mb-2"></p>
+                            <p class="m-0">Es así, que el año 2001, obtuvimos el segundo puesto a nivel regional en el Concurso Nacional de Ciencia y Tecnología con el proyecto “Ocupación de los pobladores Puruchuco – Huaquerones”. El año 2002, se realiza la reformulación del Proyecto Educativo Institucional (PEI) y el Proyecto Curricular de Centro (PCC). En el 2003, se decide el cambio de nombre de nuestra escuela, denominándose IE Nª1263 “PURUCHUCO”, se institucionaliza el lema “Identidad abierta al mundo” y se actualiza el diseño de la insignia.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-right">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 mr-md-3">
+                            <h4 class="mb-2"></h4>
+                            <p class="text-uppercase mb-2"></p>
+                            <p class="m-0">Así mismo, se da inicio al concurso de la “Dama del Algodón” en reemplazo del concurso de la “Reina de la Primavera”. Ese mismo año, participamos en el IV Concurso Nacional de Innovaciones Pedagógicas con dos proyectos: “Jardín Botánico” que mereció un Oficio Ministerial de Felicitación y “Estrategias de comprensión lectora para un pensamiento crítico”, proyecto galardonado y financiado por el Banco Interamericano de Desarrollo (BID) con un monto de S/. 14,000 nuevos soles. En el año 2005, participamos en el Concurso Nacional de Innovaciones Educativas organizada por PROPOLI, volviendo a ganar un financiamiento de $ 1,500 dólares.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-center text-md-left">
+                        <img class="img-fluid ml-md-3" src="img/areas-er1.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-right">
+                        <img class="img-fluid mr-md-3" src="img/areas-er1.jpg" alt="">
+                    </div>
+                    <div class="col-md-6 text-center text-md-left">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 ml-md-3">
+                            <h4 class="mb-2"></h4>
+                            <p class="text-uppercase mb-2"></p>
+                            <p class="m-0">El 2006, participamos en el Primer Concurso “Trabajemos el Patrimonio en el Aula”, organizado por la Dirección de Promoción Escolar, Cultura y Deporte (DIPECUD) del Ministerio de Educación, haciéndonos merecedores de un Diploma de Honor. Al año siguiente, 2007, se inaugura el “Museo Escolar” como parte del Proyecto de Innovación “Conservación y Manejo Sostenido del Patrimonio Cultural en Puruchuco – Huaquerones”, que nos permitió participar en el Programa de Pasantías de Proyectos Innovadores del Ministerio de Educación. Ese mismo año, se logra el segundo lugar en el II Concurso “Trabajemos el Patrimonio Cultural en el Aula”, organizado por DIPECUD del Ministerio de Educación, con el proyecto “Hombres de Pluma y Damas del Algodón”. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-right">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 mr-md-3">
+                            <h4 class="mb-2"></h4>
+                            <p class="text-uppercase mb-2"></p>
+                            <p class="m-0">El 2008, en un Convenio Interinstitucional entre la IE Mixto Huaycán con su proyecto “Taller de Arqueología” y nuestra IE con el proyecto “Promoviendo la defensa del patrimonio cultural en Puruchuco – Huaquerones” logramos ganar el concurso y auspicio del Centro Cultural del Banco Interamericano de Desarrollo (BID), a nivel de Iberoamérica con el Proyecto de Innovación “Instituciones Educativas Promotoras de la Defensa del Patrimonio Cultural en Ate”, recibiendo el financiamiento de $ 4,500 dólares</p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+                    <div class="col-md-6 text-center text-md-left">
+                        <img class="img-fluid ml-md-3" src="img/areas-er1.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+ <!-- Story Start -->
+    <div class="container-fluid py-5" id="story">
+        <div class="container pt-5 pb-3">
+          
+                <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;"></h6>
+                <h1 class="font-secondary display-4"></h1>
+            
+            </div>
+            <div class="container timeline position-relative p-0">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-right">
+                        <img class="img-fluid mr-md-3" src="img/areas-er1.jpg" alt="">
+                    </div>
+                    <div class="col-md-6 text-center text-md-left">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 ml-md-3">
+                            <h4 class="mb-2"></h4>
+                            <p class="text-uppercase mb-2"></p>
+                            <p class="m-0">Entre los años 2011 y 2012, participamos en el Proyecto de Innovación Pedagógica Interinstitucional “Promoción y Defensa del Patrimonio Cultural e Histórico de Lima Metropolitana”, organizado por la Dirección Regional de Educación de Lima Metropolitana (DRELM). Ese mismo año, 2012, iniciamos la participación en el concurso “Representando al curaca”, luego, denominado “Encuentro de Curacas”, logrando ganar el concurso la representación del nivel de Educación Primaria, el año 2017. Al año siguiente, 2018, obtuvimos el segundo lugar en el concurso de Ciencia y Tecnología a nivel de la UGEL Nª 06. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-right">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 mr-md-3">
+                            <h4 class="mb-2"></h4>
+                            <p class="text-uppercase mb-2"></p>
+                            <p class="m-0">El año 2019, se obtuvieron logros importantes en los Juegos Florales en los concursos de Murales y Argumentación.
+A partir del año 2020, por motivo de la emergencia sanitaria producida por la pandemia del COVID-19, se logró brindar clases remotas a los estudiantes de nuestra IE utilizando diversas herramientas tecnológicas para promover su participación. Así mismo, esta pandemia nos arrancó a uno de los integrantes de esta familia puruchucana, el profesor Guillermo Vivanco Torres del área de Ciencia y Tecnología del nivel de Educación Secundaria.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-center text-md-left">
+                        <img class="img-fluid ml-md-3" src="img/areas-er1.jpg" alt="">
+                    </div>
+                </div>
+               
+                    </div>
+
+
+
+
+           
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Story End -->
+
+     <!-- Start Footer -->
+    <footer class="bg-dark" id="tempaltemo_footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4 pt-5">
+                    <h2 class="h2 text-success border-bottom pb-3 border-light logo">
+
+                        <img class="img-fluid" src="./assets/img/logocochi.png" alt="">
+
+                    </h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li>
+                            <i class="fas fa-map-marker-alt fa-fw"></i>
+                            123 Consectetur at ligula 10660
+                        </li>
+                        <li>
+                            <i class="fa fa-phone fa-fw"></i>
+                            <a class="text-decoration-none" href="tel:956280451"> 956280451</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-envelope fa-fw"></i>
+                            <a class="text-decoration-none" href="mailto: ie1263puruchuco@gmail.com"> ie1263puruchuco@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 pt-5">
+                   <!--  <h2 class="h2 text-light border-bottom pb-3 border-light">Products</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li><a class="text-decoration-none" href="#">Luxury</a></li>
+                        <li><a class="text-decoration-none" href="#">Sport Wear</a></li>
+                        <li><a class="text-decoration-none" href="#">Men's Shoes</a></li>
+                        <li><a class="text-decoration-none" href="#">Women's Shoes</a></li>
+                        <li><a class="text-decoration-none" href="#">Popular Dress</a></li>
+                        <li><a class="text-decoration-none" href="#">Gym Accessories</a></li>
+                        <li><a class="text-decoration-none" href="#">Sport Shoes</a></li>
+                    </ul> -->
+                </div>
+
+                <div class="col-md-4 pt-5">
+                  <!--   <h2 class="h2 text-light border-bottom pb-3 border-light">Further Info</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li><a class="text-decoration-none" href="#">Home</a></li>
+                        <li><a class="text-decoration-none" href="#">About Us</a></li>
+                        <li><a class="text-decoration-none" href="#">Shop Locations</a></li>
+                        <li><a class="text-decoration-none" href="#">FAQs</a></li>
+                        <li><a class="text-decoration-none" href="#">Contact</a></li>
+                    </ul>  -->
+                </div>
+
+            </div>
+
+            <div class="row text-light mb-4">
+                <div class="col-12 mb-3">
+                    <div class="w-100 my-3 border-top border-light"></div>
+                </div>
+                <div class="col-auto me-auto">
+                    <ul class="list-inline text-left footer-icons">
+                        <li class="list-inline-item border border-light rounded-circle text-center">
+                            <a class="text-light text-decoration-none" target="_blank" href="https://www.facebook.com/IE1263puruchuco.ate"><i class="fab fa-facebook-f fa-lg fa-fw"></i></a>
+                        </li>
+                        <!-- <li class="list-inline-item border border-light rounded-circle text-center">
+                            <a class="text-light text-decoration-none" target="_blank" href="https://www.instagram.com/"><i class="fab fa-instagram fa-lg fa-fw"></i></a>
+                        </li>
+                        <li class="list-inline-item border border-light rounded-circle text-center">
+                            <a class="text-light text-decoration-none" target="_blank" href="https://twitter.com/"><i class="fab fa-twitter fa-lg fa-fw"></i></a>
+                        </li>
+                        <li class="list-inline-item border border-light rounded-circle text-center">
+                            <a class="text-light text-decoration-none" target="_blank" href="https://www.linkedin.com/"><i class="fab fa-linkedin fa-lg fa-fw"></i></a>
+                        </li> -->
+                    </ul>
+                </div>
+                
+        </div>
+
+        <div class="w-100 bg-black py-3">
+            <div class="container">
+                <div class="row pt-2">
+                    <div class="col-12">
+                        <p class="text-left text-light">
+                            Copyright &copy; 2023 I.E. 1263 Puruchuco
+                           
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Start Script -->
+    <script src="assets/js/jquery-1.11.0.min.js"></script>
+    <script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/templatemo.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <!-- End Script -->
+</body>
+
+</html>
